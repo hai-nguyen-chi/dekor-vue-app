@@ -7,6 +7,8 @@ import News from '@/views/news/News.vue'
 import Contact from '@/views/contact/Contact.vue'
 import Page404 from '@/views/Page404/Page404.vue'
 import Login from '@/views/login/Login.vue'
+import Register from '@/views/register/Register.vue'
+import Cart from '@/views/cart/Cart.vue'
 
 const routes = [
   {
@@ -39,6 +41,24 @@ const routes = [
         },
         {
           title: 'Đăng nhập tài khoản',
+          disabled: true,
+          href: ''
+        }
+      ]
+    }
+  },
+  {
+    path: '/register',
+    component: Register,
+    meta: {
+      breadcrumbs: [
+        {
+          title: 'Trang chủ',
+          disabled: false,
+          href: '/'
+        },
+        {
+          title: 'Đăng ký tài khoản',
           disabled: true,
           href: ''
         }
@@ -112,6 +132,24 @@ const routes = [
         },
         {
           title: 'Liên hệ',
+          disabled: true,
+          href: ''
+        }
+      ]
+    }
+  },
+  {
+    path: '/cart',
+    component: Cart,
+    meta: {
+      breadcrumbs: [
+        {
+          title: 'Trang chủ',
+          disabled: false,
+          href: '/'
+        },
+        {
+          title: 'Giỏ hàng',
           disabled: true,
           href: ''
         }
